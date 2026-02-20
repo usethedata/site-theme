@@ -1,0 +1,19 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links">
+                {% if site.author.email %}
+                <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+                {% endif %}
+                {% if site.footer_links %}
+                {% for link in site.footer_links %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <div class="footer-copyright">
+                &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,12 @@
+<header class="site-header">
+    <div class="container">
+        <a href="/" class="site-name">{{ site.title }}</a>
+        {% if site.header_links %}
+        <nav class="header-links">
+            {% for link in site.header_links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
+        {% endif %}
+    </div>
+</header>
