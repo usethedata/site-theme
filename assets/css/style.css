@@ -42,6 +42,7 @@ body {
 .header-links {
     display: flex;
     gap: 1.5rem;
+    margin-left: auto;
 }
 
 .header-links a {
